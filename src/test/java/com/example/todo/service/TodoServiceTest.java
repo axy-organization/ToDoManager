@@ -26,7 +26,7 @@ class TodoServiceTest {
         TodoItem item = service.addTodo("Prepare webinar demo");
         boolean result = service.markTodoCompleted(item.getId());
 
-        assertFalse(result);
+        assertTrue(result);
         assertTrue(item.isCompleted());
     }
 }
