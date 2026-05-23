@@ -12,12 +12,12 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@master
+        uses: actions/checkout@v4
 
       - name: Setup repository
-        uses: actions/checkout@master
+        uses: actions/checkout@v4
         with:
-          ref: master
+          ref: main
 
       - name: Merge to master
         run: git checkout --progress --force ${{ github.sha }}
